@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pro Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2>PassGen Pro</h2>
+      </nav>
+
+      <div class="display-container">
+        <div class="display" id="display">P@ssw0rd123</div>
+        <button id="copyBtn" title="Copy to Clipboard">📋</button>
+      </div>
+
+      <input
+        type="number"
+        id="text"
+        placeholder="Enter Length (e.g. 12)"
+        min="4"
+        max="50"
+      />
+
+      <div class="options">
+        <div class="button-group">
+          <button id="num">Numbers</button>
+          <button id="mix">Letters + Num</button>
+        </div>
+        <button id="strong">Generate Strong Password</button>
+      </div>
+
+      <p id="status-msg"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
