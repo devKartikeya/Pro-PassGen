@@ -70,7 +70,7 @@ go.addEventListener("click", () => {
   }
 });
 
-// 3. End Game Helper
+// 3. End Game 
 function endGame() {
   user.disabled = true;
   rand = null; // Prevents clicking 'Go' after game ends
@@ -86,3 +86,4 @@ user.addEventListener("blur", () => {
   go.style.backgroundColor = "";
   go.style.transform = "";
 });
+
